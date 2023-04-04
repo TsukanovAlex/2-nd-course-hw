@@ -1,0 +1,109 @@
+@import 'vars';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: $text_color;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.top {
+    height: 1024px;
+    background-image: url(../img/top_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 217px;
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 78px;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 44px;
+    }
+
+    &__button {
+        width: 234.06px;
+        height: 48.6px;
+        background: #9C0332;
+        border-radius: 30px;
+        border: none;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+        color: $text_color;
+
+        &:hover {
+            background: #EB443F;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.game-box {
+    display: flex;
+    padding: 128px 0;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $gap;
+    background: #000915;
+
+
+    &__game {
+        display: flex;
+        align-items: flex-end;
+        padding: 32px;
+        border-radius: 16px;
+        width: 379px;
+        height: 300px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: $text_color;
+
+        &:hover {
+            border: 3px solid #44D2FF;
+            border-radius: 16px;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.game-1 {
+    background-image: url(../img/game_1.png);
+    background-position: center;
+}
+
+.game-2 {
+    background-image: url(../img/game_2.png);
+    background-position: center;
+}
+
+.game-3 {
+    background-image: url(../img/game_3.png);
+    background-position: center;
+}
