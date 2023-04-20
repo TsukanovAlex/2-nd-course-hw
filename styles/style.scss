@@ -20,6 +20,28 @@ body {
     padding-right: calc(50% - 600px);
 }
 
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 234.06px;
+    height: 48.6px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: $text_color;
+
+    &:hover {
+        background: #EB443F;
+        transition: all 0.3s;
+    }
+}
+
 .top {
     height: 1024px;
     background-image: url(../img/top_bg.jpg);
@@ -36,30 +58,11 @@ body {
     }
 
     &__text {
+        width: 481px;
         font-weight: 300;
         font-size: 18px;
         line-height: 32px;
         margin-bottom: 44px;
-    }
-
-    &__button {
-        width: 234.06px;
-        height: 48.6px;
-        background: #9C0332;
-        border-radius: 30px;
-        border: none;
-
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        align-items: center;
-        font-family: 'Montserrat', sans-serif;
-        color: $text_color;
-
-        &:hover {
-            background: #EB443F;
-            transition: all 0.3s;
-        }
     }
 }
 
@@ -71,7 +74,6 @@ body {
     flex-wrap: wrap;
     gap: $gap;
     background: #000915;
-
 
     &__game {
         display: flex;
@@ -107,4 +109,64 @@ body {
     background-image: url(../img/game_3.png);
     background-position: center;
 }
+
+.games {
+    background: #000915;
+
+    &__block {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 233px 0;
+        column-gap: 135px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: $gap;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 59px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 32px;
+
+        &_center {
+            text-align: center;
+            padding: 0 118px;
+        }
+    }
+
+    &__mystery {
+        background-image: url(../img/bgGame3.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 276px 0;
+        display: flex;
+        justify-content: center;
+
+        &_center {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.footer {
+    background: #000915;
+    border-top: 1px solid rgba(184, 212, 255, 0.2);
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
 @import 'mobile';
