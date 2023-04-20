@@ -21,6 +21,9 @@ body {
 }
 
 .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 234.06px;
     height: 48.6px;
     background: #9C0332;
@@ -61,8 +64,6 @@ body {
         line-height: 32px;
         margin-bottom: 44px;
     }
-
-
 }
 
 .game-box {
@@ -73,7 +74,6 @@ body {
     flex-wrap: wrap;
     gap: $gap;
     background: #000915;
-
 
     &__game {
         display: flex;

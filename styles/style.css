@@ -19,6 +19,9 @@ body {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
@@ -226,6 +229,10 @@ body {
   }
   .games__text_center {
     padding: 0;
+  }
+  .games__img {
+    width: 344px;
+    height: 236px;
   }
   .games__img_memoriz {
     order: 1;

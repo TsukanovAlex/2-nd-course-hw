@@ -20,10 +20,10 @@
             <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
                 <b>поехали</b> и <b>приступай</b>
             </p>
-            <button class="top__button button">Поехали!</button>
+            <a class="top__button button" href="#gameBox">Поехали!</a>
         </div>
     </div>
-    <div class="game-box center">
+    <div class="game-box center" id="gameBox">
         <a class="game-box__game game-1" href="#seasons">
             Игра 1</a>
         <a class="game-box__game game-2" href="#memorizeWords">
@@ -37,7 +37,7 @@
                 <h3 class="games__title">Времена года</h3>
                 <p class="games__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому
                     времени года он относится</p>
-                <button class="games__button button">Играть</button>
+                <button onclick="seasons()" class="games__button button">Играть</button>
             </div>
             <img class="games__img" src="./img/imgGameBox1.png" alt="img_seasones">
         </div>
@@ -63,6 +63,7 @@
     <footer class="footer">
         Все права защищены
     </footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
